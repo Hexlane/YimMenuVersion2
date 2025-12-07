@@ -1,4 +1,3 @@
-
 #include "SavedVehicles.hpp"
 
 #include "core/backend/ScriptMgr.hpp"
