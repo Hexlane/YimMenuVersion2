@@ -1,4 +1,3 @@
-
 #include "game/pointers/Pointers.hpp"
 #include "game/frontend/Menu.hpp"
 #include "core/frontend/manager/UIManager.hpp"
@@ -17,7 +16,7 @@ namespace YimMenu
 
 		ImGuiWindowFlags flags = ImGuiWindowFlags_NoTitleBar | ImGuiWindowFlags_NoCollapse;
 		auto pos = ImGui::GetCursorPos();
-		if (ImGui::Begin("##ClassicInputWindow", nullptr, flags))
+		if(ImGui::Begin("##ClassicInputWindow", nullptr, flags))
 		{
 			if (ImGui::BeginChild("##submenus", ImVec2(120, ImGui::GetContentRegionAvail().y - 20), true, ImGuiWindowFlags_NoTitleBar))
 			{
@@ -54,7 +53,7 @@ namespace YimMenu
 			{
 				auto optionsFont = YimMenu::UIManager::GetOptionsFont();
 				if (optionsFont)
-					ImGui::PushFont(optionsFont);
+					ImGui::PushFont(optionsFont, YimMenu::Menu::Font::g_OptionsFontSize);
 
 				auto activeSubmenu = YimMenu::UIManager::GetActiveSubmenu();
 				if (activeSubmenu)
