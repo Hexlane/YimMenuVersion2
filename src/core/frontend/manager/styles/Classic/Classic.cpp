@@ -53,7 +53,7 @@ namespace YimMenu
 			{
 				auto optionsFont = YimMenu::UIManager::GetOptionsFont();
 				if (optionsFont)
-					ImGui::PushFont(optionsFont, YimMenu::Menu::Font::g_OptionsFontSize);
+					ImGui::PushFont(optionsFont);
 
 				auto activeSubmenu = YimMenu::UIManager::GetActiveSubmenu();
 				if (activeSubmenu)
