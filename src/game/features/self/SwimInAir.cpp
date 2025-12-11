@@ -8,7 +8,6 @@ namespace YimMenu::Features
 	class SwimInAir : public LoopedCommand
 	{
 		using LoopedCommand::LoopedCommand;
-		//Basic needs improved
 		virtual void OnTick() override
 		{
 			int ped = PLAYER::PLAYER_PED_ID();
