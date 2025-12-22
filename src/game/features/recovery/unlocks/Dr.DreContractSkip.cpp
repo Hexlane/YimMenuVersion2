@@ -13,6 +13,7 @@ namespace YimMenu::Features
 				if (*Pointers.IsSessionStarted)
 				{
 				    Stats::SetInt("MPX_FIXER_STORY_BS", 4095);
+					STATS::STAT_SAVE(0, 0, 3, 0);
 				}
 				else
 				{
@@ -24,4 +25,5 @@ namespace YimMenu::Features
 	    "SkipDrDreeContract",
 	    "Skip Dr Dree Contract",
 	    "Skip DrDreeContract"};
+
 }
