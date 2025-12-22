@@ -44,6 +44,7 @@ namespace YimMenu::Features
 				Stats::SetPackedBool(54815, true);
 				Stats::SetPackedBool(54816, true);
 				Stats::SetPackedBool(54817, true);
+				STATS::STAT_SAVE(0, 0, 3, 0);
 			}
 			else
 			{
@@ -57,3 +58,4 @@ namespace YimMenu::Features
 	    "Unlocks all mansion trophies"};
 
 }
+
