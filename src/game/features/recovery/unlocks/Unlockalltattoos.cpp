@@ -25,6 +25,7 @@ namespace YimMenu::Features
 				Stats::SetInt("MPX_AWD_100_KILLS", 1000);
 				Stats::SetInt("MPX_AWD_100_WINS", 1000);
 				Stats::SetInt("MPX_AWD_50_KILLS", 1000);
+				STATS::STAT_SAVE(0, 0, 3, 0);
 			}
 			else
 			{
@@ -37,3 +38,4 @@ namespace YimMenu::Features
 	    "Unlock All Tattoos",
 	    "Unlocks every tattoo"};
 }
+
