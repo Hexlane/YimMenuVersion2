@@ -217,7 +217,6 @@ namespace YimMenu::Features
 				Stats::SetPackedBool(36941, 36942);
 				Stats::SetInt("MPX_PROG_HUB_10_CHAL_ANSR", 10);
 				Stats::SetPackedBool(15456, 15460);
-				ScriptMgr::Yield(5000ms);
 				Stats::SetPackedInt(24929, 14);
 				Stats::SetPackedInt(24905, 9);
 				Stats::SetPackedInt(26809, 10);
@@ -233,6 +232,7 @@ namespace YimMenu::Features
 				Stats::SetPackedInt(42090, 15);
 				Stats::SetPackedInt(42088, 15);
 				Stats::SetPackedInt(42091, 10);
+				ScriptMgr::Yield(5000ms);
 				STATS::STAT_SAVE(0, 0, 3, 0);
 			}
 			else
@@ -246,5 +246,6 @@ namespace YimMenu::Features
 	    "Unlock All Career Progress",
 	    "Completes all Career Progress categories"};
 }
+
 
 
