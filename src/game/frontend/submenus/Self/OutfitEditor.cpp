@@ -4,7 +4,6 @@
 #include "game/frontend/items/Items.hpp"
 #include "game/gta/Natives.hpp"
 #include <random>
-#include "game/backend/Outfit.hpp"
 #include <nlohmann/json.hpp>
 
 // TODO: clean up more AI generated junk from this file
