@@ -8,22 +8,41 @@ namespace YimMenu::Features
 	class AllVehsLoudRadio : public LoopedCommand
 	{
 		using LoopedCommand::LoopedCommand;
-
-		virtual void OnTick() override
+		std::unordered_set<int> m_Forced;
+		void OnTick() override
 		{
 			for (auto veh : Pools::GetVehicles())
 			{
-				veh.ForceControl();
-				auto handle = veh.GetHandle();
-				auto target_veh = Vehicle(handle);
-				if (target_veh.RequestControl())
-					AUDIO::SET_VEHICLE_RADIO_ENABLED(handle, 1);
-					AUDIO::SET_VEHICLE_RADIO_LOUD(handle, 1);
-				  VEHICLE::SET_VEHICLE_ENGINE_ON(handle, 1, 1, 0);
+				const int handle = veh.GetHandle();
+				if (!ENTITY::DOES_ENTITY_EXIST(handle))
+					continue;
+				if (ENTITY::IS_ENTITY_DEAD(handle, false))
+					continue;
+				if (!veh.RequestControl(0))
+				{
+					if (!m_Forced.contains(handle))
+					{
+						veh.ForceControl();
+						m_Forced.insert(handle);
+					}
+					else
+					{
+						continue;
+					}
+				}
+				if (!ENTITY::DOES_ENTITY_EXIST(handle))
+					continue;
+				AUDIO::SET_VEHICLE_RADIO_ENABLED(handle, true);
+				AUDIO::SET_VEHICLE_RADIO_LOUD(handle, true);
+				VEHICLE::SET_VEHICLE_ENGINE_ON(handle, true, true, false);
 			}
-			return;
+		}
+
+		void OnDisable() override
+		{
+			m_Forced.clear();
 		}
 	};
 
-	static AllVehsLoudRadio _AllVehsLoudRadio{"loudsubwoffer", "Subwoofer", "Enables loud radio on vehicles, Players can hear it."};
-}
+		static AllVehsLoudRadio _AllVehsLoudRadio{"loudsubwoffer", "Subwoofer", "Enables loud radio on vehicles, Players can hear it."};
+	}
