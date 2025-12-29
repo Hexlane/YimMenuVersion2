@@ -59,6 +59,14 @@ namespace YimMenu::Submenus
 
 		trophies->AddItem(std::make_shared<CommandItem>("unlockallmansiontrophies"_J));
 
+		auto gunvanGroup = std::make_shared<Group>("Gun Van", 2);
+		gunvanGroup->AddItem(std::make_shared<ListCommandItem>("gunvanslot"_J));
+		gunvanGroup->AddItem(std::make_shared<ListCommandItem>("gunvanweapon"_J));
+		gunvanGroup->AddItem(std::make_shared<CommandItem>("setgunvanweapon"_J));
+
+
+		
+        main->AddItem(gunvanGroup);
 		main->AddItem(generalGroup);
 		businesses->AddItem(businessGroup);
 		casino->AddItem(casinoSlots);
