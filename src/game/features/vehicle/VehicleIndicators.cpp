@@ -42,14 +42,14 @@ namespace YimMenu::Features
 				return;
 
 	       	// ← LEFT ARROW → toggle left signal
-			if (GetAsyncKeyState(VK_LEFT) & 1)
+			if (GetAsyncKeyState(VK_RIGHT) & 1)
 			{
 				m_Left = !m_Left;
 				m_Right = false;
 			}
 
 			// → RIGHT ARROW → toggle right signal
-			if (GetAsyncKeyState(VK_RIGHT) & 1)
+			if (GetAsyncKeyState(VK_LEFT) & 1)
 			{
 				m_Right = !m_Right;
 				m_Left = false;
