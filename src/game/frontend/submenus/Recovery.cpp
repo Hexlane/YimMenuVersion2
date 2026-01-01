@@ -18,6 +18,8 @@ namespace YimMenu::Submenus
 		auto generalUnlocks = std::make_shared<Group>("General");
 		auto trophies = std::make_shared<Group>("Trophies");
 		auto skip = std::make_shared<Group>("Skipper");
+		auto Unreleased = std::make_shared<Group>("Unreleased");
+		auto requestServices = std::make_shared<Group>("Request Services");
 
 		auto generalGroup = std::make_shared<Group>("General");
 		auto gunvanGroup = std::make_shared<Group>("Gun Van");
@@ -68,6 +70,17 @@ namespace YimMenu::Submenus
 
 		trophies->AddItem(std::make_shared<CommandItem>("unlockallmansiontrophies"_J));
 
+		requestServices->AddItem(std::make_shared<CommandItem>("requestmoc"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestavenger"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestterrorbyte"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestkosatka"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestacidlab"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestacidbike"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestammodrop"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestbullshark"_J));
+		requestServices->AddItem(std::make_shared<CommandItem>("requestairstrike"_J));
+
+		Unreleased->AddItem(std::make_shared<CommandItem>("Unreleased_content"_J));
 		
 
 
@@ -76,11 +89,13 @@ namespace YimMenu::Submenus
 		
 		main->AddItem(generalGroup);
 		main->AddItem(gunvanGroup);
+		main->AddItem(requestServices);
 		businesses->AddItem(businessGroup);
 		casino->AddItem(casinoSlots);
 		unlocks->AddItem(generalUnlocks);
 		unlocks->AddItem(trophies);
 		unlocks->AddItem(skip);
+		unlocks->AddItem(Unreleased);
 
 		
 		AddCategory(std::move(main));
