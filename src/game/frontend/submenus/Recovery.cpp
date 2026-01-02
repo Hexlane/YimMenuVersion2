@@ -59,7 +59,8 @@ namespace YimMenu::Submenus
 		
 		businessGroup->AddItem(std::make_shared<ListCommandItem>("businesssafe"_J));
 		businessGroup->AddItem(std::make_shared<CommandItem>("claimsafeearnings"_J));
-
+		businessGroup->AddItem(std::make_shared<BoolCommandItem>("mansion_business_boost"_J));
+		
 		casinoSlots->AddItem(std::make_shared<BoolCommandItem>("casinomanipulaterigslotmachines"_J));
 		
 		generalUnlocks->AddItem(std::make_shared<CommandItem>("unlockallcareerprogress"_J));
