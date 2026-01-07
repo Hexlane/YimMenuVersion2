@@ -87,6 +87,7 @@ namespace YimMenu::Submenus
 		skip->AddItem(std::make_shared<CommandItem>("SkipJenetteTheMutette"_J));
 		skip->AddItem(std::make_shared<CommandItem>("SkipCluckinBellRaid"_J));
 		skip->AddItem(std::make_shared<CommandItem>("SkipOscargunzmanflies"_J));
+		skip->AddItem(std::make_shared<CommandItem>("KnoWayOutPrepsSkip"_J));
 
 		trophies->AddItem(std::make_shared<CommandItem>("unlockallmansiontrophies"_J));
 
@@ -121,7 +122,6 @@ namespace YimMenu::Submenus
 		main->AddItem(ceoGroup);
 		main->AddItem(achievements);
 		main->AddItem(cooldown);
-		
 		businesses->AddItem(businessGroup);
 		casino->AddItem(casinoSlots);
 		unlocks->AddItem(generalUnlocks);
