@@ -1,3 +1,4 @@
+
 #pragma once
 #include <d3d11.h>
 
@@ -103,7 +104,5 @@ namespace YimMenu::Hooks
 		extern bool AssistedAimShouldReleaseEntity(__int64 a1);
 		extern const char* GetLabelText(void* unk, const char* label);
 		extern const char* GetLabelTextInternal(void* this_, uint32_t label_hash);
-		const char* GetLabelTextInternal(void* this_, uint32_t label_hash);
-
 	}
 }
