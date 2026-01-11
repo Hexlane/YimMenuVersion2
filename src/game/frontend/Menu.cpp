@@ -189,25 +189,46 @@ namespace YimMenu
 			style.ItemInnerSpacing = {4, 4};
 
 			ImVec4 c[] = {
-				{1,1,1,1},{0.5,0.5,0.5,1},{0.0588f,0.0588f,0.0588f,1},{0,0,0,0},
-				{0.08f,0.08f,0.08f,0.94f},{0.43f,0.43f,0.5f,0.5f},{0,0,0,0},
-				{0.16f,0.29f,0.48f,0.54f},{0.26f,0.59f,0.98f,0.4f},
-				{0.26f,0.59f,0.98f,0.67f},{0.04f,0.04f,0.04f,1},
-				{0.16f,0.29f,0.48f,1},{0,0,0,0.51f},{0.14f,0.14f,0.14f,1},
-				{0.02f,0.02f,0.02f,0.53f},{0.31f,0.31f,0.31f,1},
-				{0.41f,0.41f,0.41f,1},{0.51f,0.51f,0.51f,1},
-				{0.26f,0.59f,0.98f,1},{0.24f,0.52f,0.88f,1},
-				{0.26f,0.59f,0.98f,1},{0.26f,0.59f,0.98f,0.4f},
-				{0.26f,0.59f,0.98f,1},{0.06f,0.53f,0.98f,1},
-				{0.26f,0.59f,0.98f,0.31f},{0.26f,0.59f,0.98f,0.8f},
-				{0.26f,0.59f,0.98f,1},{0.43f,0.43f,0.5f,0.5f},
-				{0.1f,0.4f,0.75f,0.78f},{0.1f,0.4f,0.75f,1},
-				{0.26f,0.59f,0.98f,0.2f},{0.26f,0.59f,0.98f,0.67f},
-				{0.26f,0.59f,0.98f,0.95f},{1,1,1,1},
-				{0.26f,0.59f,0.98f,0.8f},{0.18f,0.35f,0.58f,0.862f},
-				{0.2f,0.41f,0.68f,1},{0.26f,0.59f,0.98f,1}
-			};
-			for (int i = 0; i < 40; i++) colors[i] = c[i];
+			    {1, 1, 1, 1},
+			    {0.5, 0.5, 0.5, 1},
+			    {0.0588f, 0.0588f, 0.0588f, 1},
+			    {0, 0, 0, 0},
+			    {0.08f, 0.08f, 0.08f, 0.94f},
+			    {0.43f, 0.43f, 0.5f, 0.5f},
+			    {0, 0, 0, 0},
+			    {0.16f, 0.29f, 0.48f, 0.54f},
+			    {0.26f, 0.59f, 0.98f, 0.4f},
+			    {0.26f, 0.59f, 0.98f, 0.67f},
+			    {0.04f, 0.04f, 0.04f, 1},
+			    {0.16f, 0.29f, 0.48f, 1},
+			    {0, 0, 0, 0.51f},
+			    {0.14f, 0.14f, 0.14f, 1},
+			    {0.02f, 0.02f, 0.02f, 0.53f},
+			    {0.31f, 0.31f, 0.31f, 1},
+			    {0.41f, 0.41f, 0.41f, 1},
+			    {0.51f, 0.51f, 0.51f, 1},
+			    {0.26f, 0.59f, 0.98f, 1},
+			    {0.24f, 0.52f, 0.88f, 1},
+			    {0.26f, 0.59f, 0.98f, 1},
+			    {0.26f, 0.59f, 0.98f, 0.4f},
+			    {0.26f, 0.59f, 0.98f, 1},
+			    {0.06f, 0.53f, 0.98f, 1},
+			    {0.26f, 0.59f, 0.98f, 0.31f},
+			    {0.26f, 0.59f, 0.98f, 0.8f},
+			    {0.26f, 0.59f, 0.98f, 1},
+			    {0.43f, 0.43f, 0.5f, 0.5f},
+			    {0.1f, 0.4f, 0.75f, 0.78f},
+			    {0.1f, 0.4f, 0.75f, 1},
+			    {0.26f, 0.59f, 0.98f, 0.2f},
+			    {0.26f, 0.59f, 0.98f, 0.67f},
+			    {0.26f, 0.59f, 0.98f, 0.95f},
+			    {1, 1, 1, 1},
+			    {0.26f, 0.59f, 0.98f, 0.8f},
+			    {0.18f, 0.35f, 0.58f, 0.862f},
+			    {0.2f, 0.41f, 0.68f, 1},
+			    {0.26f, 0.59f, 0.98f, 1}};
+			for (int i = 0; i < 40; i++)
+				colors[i] = c[i];
 		}
 
 		else if (theme == 3) // CANADIAN STYLE
@@ -224,15 +245,15 @@ namespace YimMenu
 			style.ItemSpacing = {8, 4};
 			style.ItemInnerSpacing = {4, 4};
 
-			colors[ImGuiCol_Text] = {1,1,1,1};
-			colors[ImGuiCol_WindowBg] = {0.0588f,0.0588f,0.0588f,1};
-			colors[ImGuiCol_Button] = {0.8f,0,0,0.4f};
-			colors[ImGuiCol_ButtonHovered] = {0.9f,0,0,1};
-			colors[ImGuiCol_ButtonActive] = {1,0,0,1};
-			colors[ImGuiCol_Header] = {0.8f,0,0,0.5f};
-			colors[ImGuiCol_HeaderHovered] = {0.9f,0,0,0.78f};
-			colors[ImGuiCol_HeaderActive] = {1,0,0,1};
-			colors[ImGuiCol_CheckMark] = {1,0,0,1};
+			colors[ImGuiCol_Text] = {1, 1, 1, 1};
+			colors[ImGuiCol_WindowBg] = {0.0588f, 0.0588f, 0.0588f, 1};
+			colors[ImGuiCol_Button] = {0.8f, 0, 0, 0.4f};
+			colors[ImGuiCol_ButtonHovered] = {0.9f, 0, 0, 1};
+			colors[ImGuiCol_ButtonActive] = {1, 0, 0, 1};
+			colors[ImGuiCol_Header] = {0.8f, 0, 0, 0.5f};
+			colors[ImGuiCol_HeaderHovered] = {0.9f, 0, 0, 0.78f};
+			colors[ImGuiCol_HeaderActive] = {1, 0, 0, 1};
+			colors[ImGuiCol_CheckMark] = {1, 0, 0, 1};
 		}
 	}
 
@@ -247,17 +268,17 @@ namespace YimMenu
 		ImGui::SetCursorPosX((ImGui::GetWindowSize().x - size.x) * 0.5f);
 
 		static const ImVec4 colors[] = {
-			ImVec4(3 / 255.f, 252 / 255.f, 102 / 255.f, 1.0f),
-			ImVec4(3 / 255.f, 252 / 255.f, 157 / 255.f, 1.0f),
-			ImVec4(3 / 255.f, 252 / 255.f, 215 / 255.f, 1.0f),
-			ImVec4(3 / 255.f, 252 / 255.f, 248 / 255.f, 1.0f),
-			ImVec4(3 / 255.f, 206 / 255.f, 252 / 255.f, 1.0f),
-			ImVec4(3 / 255.f, 157 / 255.f, 252 / 255.f, 1.0f),
-			ImVec4(3 / 255.f, 111 / 255.f, 252 / 255.f, 1.0f),
-			ImVec4(119 / 255.f, 3 / 255.f, 252 / 255.f, 1.0f),
-			ImVec4(198 / 255.f, 3 / 255.f, 252 / 255.f, 1.0f),
-			ImVec4(252 / 255.f, 3 / 255.f, 223 / 255.f, 1.0f),
-			ImVec4(252 / 255.f, 3 / 255.f, 132 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 252 / 255.f, 102 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 252 / 255.f, 157 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 252 / 255.f, 215 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 252 / 255.f, 248 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 206 / 255.f, 252 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 157 / 255.f, 252 / 255.f, 1.0f),
+		    ImVec4(3 / 255.f, 111 / 255.f, 252 / 255.f, 1.0f),
+		    ImVec4(119 / 255.f, 3 / 255.f, 252 / 255.f, 1.0f),
+		    ImVec4(198 / 255.f, 3 / 255.f, 252 / 255.f, 1.0f),
+		    ImVec4(252 / 255.f, 3 / 255.f, 223 / 255.f, 1.0f),
+		    ImVec4(252 / 255.f, 3 / 255.f, 132 / 255.f, 1.0f),
 		};
 		const int colorCount = sizeof(colors) / sizeof(colors[0]);
 		float x = ImGui::GetCursorScreenPos().x;
@@ -270,18 +291,16 @@ namespace YimMenu
 			float frac = fIndex - static_cast<int>(fIndex);
 
 			ImVec4 col = ImVec4(
-				colors[index1].x * (1 - frac) + colors[index2].x * frac,
-				colors[index1].y * (1 - frac) + colors[index2].y * frac,
-				colors[index1].z * (1 - frac) + colors[index2].z * frac,
-				1.0f
-			);
+			    colors[index1].x * (1 - frac) + colors[index2].x * frac,
+			    colors[index1].y * (1 - frac) + colors[index2].y * frac,
+			    colors[index1].z * (1 - frac) + colors[index2].z * frac,
+			    1.0f);
 
 			ImU32 u32col = IM_COL32(
-				static_cast<int>(col.x * 255),
-				static_cast<int>(col.y * 255),
-				static_cast<int>(col.z * 255),
-				255
-			);
+			    static_cast<int>(col.x * 255),
+			    static_cast<int>(col.y * 255),
+			    static_cast<int>(col.z * 255),
+			    255);
 
 			draw->AddText(ImVec2(x + 2, pos.y + 2), IM_COL32(0, 0, 0, 150), &text[i], &text[i + 1]);
 
@@ -316,8 +335,8 @@ namespace YimMenu
 
 		DrawRainbowTextCentered("YimMenuV2", 1.8f);
 
-	const char* rulesText = "Must Read This Safe Rules";
-	ImVec2 rulesSize = ImGui::CalcTextSize(rulesText);
+		const char* rulesText = "Must Read This Safe Rules";
+		ImVec2 rulesSize = ImGui::CalcTextSize(rulesText);
 		ImGui::SetCursorPosX((ImGui::GetWindowSize().x - rulesSize.x) * 0.5f);
 
 		ImGui::PushFont(Menu::Font::g_DefaultFont);
@@ -339,17 +358,17 @@ namespace YimMenu
 
 		ImGui::Dummy(ImVec2(0, 10));
 
-	const char* themeText = "Choose Your New Year Theme";
-	ImVec2 themeTextSize = ImGui::CalcTextSize(themeText);
-	ImGui::SetCursorPosX((ImGui::GetWindowSize().x - themeTextSize.x) * 0.5f);
-	ImGui::Text("%s", themeText);
-	ImGui::Separator();
+		const char* themeText = "Choose Your New Year Theme";
+		ImVec2 themeTextSize = ImGui::CalcTextSize(themeText);
+		ImGui::SetCursorPosX((ImGui::GetWindowSize().x - themeTextSize.x) * 0.5f);
+		ImGui::Text("%s", themeText);
+		ImGui::Separator();
 
 		static const char* themes[] = {
-			"Gold Style",
-			"USA Style",
-			"Dark Style",
-			"Canadian Style"};
+		    "Gold Style",
+		    "USA Style",
+		    "Dark Style",
+		    "Canadian Style"};
 
 		ImVec2 comboSize = ImGui::CalcTextSize(themes[g_SelectedTheme]);
 		ImGui::SetCursorPosX((ImGui::GetWindowSize().x - comboSize.x - 275) * 0.5f);
@@ -372,10 +391,6 @@ namespace YimMenu
 		PAD::DISABLE_ALL_CONTROL_ACTIONS(2);
 	}
 
-
-
-
-
 	void Menu::Init()
 	{
 		// Arguably the only place this file should be edited at for more menus
@@ -397,23 +412,66 @@ namespace YimMenu
 
 			    ImGui::PushFont(Menu::Font::g_DefaultFont);
 			    ImGui::PushStyleColor(ImGuiCol_WindowBg, ImU32(ImColor(15, 15, 15)));
-			    if (!g_ShowThemePicker && g_SelectedTheme >= 0)
-			    {
-				    UIManager::Draw();
-			    }
+
+			    UIManager::Draw();
+
 			    ImGui::PopStyleColor();
 			    ImGui::PopFont();
-			    if (g_ShowThemePicker || g_SelectedTheme < 0)
-			    {
-				    DrawStartupThemePicker();
-			    }
 		    },
 		    -1);
 	}
+
 	void Menu::SetupStyle()
 	{
 		ImGuiStyle& style = ImGui::GetStyle();
-		
+		style.Colors[ImGuiCol_Text] = ImVec4(1.00f, 1.00f, 1.00f, 1.00f);
+		style.Colors[ImGuiCol_TextDisabled] = ImVec4(0.70f, 0.70f, 0.70f, 1.00f);
+		style.Colors[ImGuiCol_WindowBg] = ImVec4(0.00f, 0.20f, 0.00f, 0.95f);
+		style.Colors[ImGuiCol_ChildBg] = ImVec4(0.00f, 0.15f, 0.00f, 0.00f);
+		style.Colors[ImGuiCol_PopupBg] = ImVec4(0.00f, 0.18f, 0.00f, 0.95f);
+		style.Colors[ImGuiCol_Border] = ImVec4(0.80f, 0.00f, 0.00f, 0.30f);
+		style.Colors[ImGuiCol_BorderShadow] = ImVec4(0.00f, 0.00f, 0.00f, 0.00f);
+		style.Colors[ImGuiCol_FrameBg] = ImVec4(0.00f, 0.30f, 0.00f, 0.54f);
+		style.Colors[ImGuiCol_FrameBgHovered] = ImVec4(0.00f, 0.40f, 0.00f, 0.40f);
+		style.Colors[ImGuiCol_FrameBgActive] = ImVec4(0.00f, 0.50f, 0.00f, 0.67f);
+		style.Colors[ImGuiCol_TitleBg] = ImVec4(0.10f, 0.10f, 0.10f, 1.00f);
+		style.Colors[ImGuiCol_TitleBgActive] = ImVec4(0.80f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_TitleBgCollapsed] = ImVec4(0.00f, 0.00f, 0.00f, 0.51f);
+		style.Colors[ImGuiCol_MenuBarBg] = ImVec4(0.00f, 0.20f, 0.00f, 0.57f);
+		style.Colors[ImGuiCol_ScrollbarBg] = ImVec4(0.02f, 0.02f, 0.02f, 0.53f);
+		style.Colors[ImGuiCol_ScrollbarGrab] = ImVec4(0.80f, 0.60f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_ScrollbarGrabHovered] = ImVec4(0.90f, 0.70f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_ScrollbarGrabActive] = ImVec4(1.00f, 0.80f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_CheckMark] = ImVec4(0.80f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_SliderGrab] = ImVec4(0.80f, 0.60f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_SliderGrabActive] = ImVec4(1.00f, 0.80f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_Button] = ImVec4(0.80f, 0.00f, 0.00f, 0.40f);
+		style.Colors[ImGuiCol_ButtonHovered] = ImVec4(0.90f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_ButtonActive] = ImVec4(1.00f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_Header] = ImVec4(0.00f, 0.30f, 0.00f, 0.31f);
+		style.Colors[ImGuiCol_HeaderHovered] = ImVec4(0.00f, 0.40f, 0.00f, 0.80f);
+		style.Colors[ImGuiCol_HeaderActive] = ImVec4(0.00f, 0.50f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_Separator] = ImVec4(0.80f, 0.00f, 0.00f, 0.50f);
+		style.Colors[ImGuiCol_SeparatorHovered] = ImVec4(0.90f, 0.00f, 0.00f, 0.78f);
+		style.Colors[ImGuiCol_SeparatorActive] = ImVec4(1.00f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_ResizeGrip] = ImVec4(0.80f, 0.60f, 0.00f, 0.25f);
+		style.Colors[ImGuiCol_ResizeGripHovered] = ImVec4(0.90f, 0.70f, 0.00f, 0.67f);
+		style.Colors[ImGuiCol_ResizeGripActive] = ImVec4(1.00f, 0.80f, 0.00f, 0.95f);
+		style.Colors[ImGuiCol_Tab] = ImVec4(0.00f, 0.20f, 0.00f, 0.86f);
+		style.Colors[ImGuiCol_TabHovered] = ImVec4(0.80f, 0.00f, 0.00f, 0.80f);
+		style.Colors[ImGuiCol_TabActive] = ImVec4(0.80f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_TabUnfocused] = ImVec4(0.00f, 0.15f, 0.00f, 0.97f);
+		style.Colors[ImGuiCol_TabUnfocusedActive] = ImVec4(0.00f, 0.30f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_PlotLines] = ImVec4(0.61f, 0.61f, 0.61f, 1.00f);
+		style.Colors[ImGuiCol_PlotLinesHovered] = ImVec4(1.00f, 0.43f, 0.35f, 1.00f);
+		style.Colors[ImGuiCol_PlotHistogram] = ImVec4(0.90f, 0.70f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_PlotHistogramHovered] = ImVec4(1.00f, 0.60f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_TextSelectedBg] = ImVec4(0.80f, 0.00f, 0.00f, 0.35f);
+		style.Colors[ImGuiCol_DragDropTarget] = ImVec4(1.00f, 1.00f, 0.00f, 0.90f);
+		style.Colors[ImGuiCol_NavHighlight] = ImVec4(0.80f, 0.00f, 0.00f, 1.00f);
+		style.Colors[ImGuiCol_NavWindowingHighlight] = ImVec4(1.00f, 1.00f, 1.00f, 0.70f);
+		style.Colors[ImGuiCol_NavWindowingDimBg] = ImVec4(0.80f, 0.80f, 0.80f, 0.20f);
+		style.Colors[ImGuiCol_ModalWindowDimBg] = ImVec4(0.80f, 0.80f, 0.80f, 0.35f);
 		style.GrabRounding = style.FrameRounding = style.ChildRounding = style.WindowRounding = 8.0f;
 	}
 	static const ImWchar* GetGlyphRangesCyrillicOnly()
