@@ -37,4 +37,5 @@ namespace YimMenu::Features
 	    "enable_hidden_liveries",
 	    "Enable Hidden DLC Liveries",
 	    "Make Safehouse in the Hills DLC liveries available for purchase"};
+
 }
