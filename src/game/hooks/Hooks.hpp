@@ -1,6 +1,7 @@
+
+
 #pragma once
 #include <d3d11.h>
-#include "Matchmaking/MatchmakingFindSessions.cpp"
 
 class CNetworkPlayerMgr;
 class CNetGamePlayer;
@@ -108,5 +109,4 @@ namespace YimMenu::Hooks
 		extern const char* GetLabelTextInternal(void* this_, uint32_t label_hash);
 	}
 }
-
 
