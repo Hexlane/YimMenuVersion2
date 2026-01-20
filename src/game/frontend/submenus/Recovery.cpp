@@ -21,7 +21,6 @@ namespace YimMenu::Submenus
 		auto Unreleased = std::make_shared<Group>("Unreleased");
 		auto requestServices = std::make_shared<Group>("Request Services");
 		auto missions = std::make_shared<Group>("Missions");
-		auto ceoGroup = std::make_shared<Group>("SecuroServ");
 		auto achievements = std::make_shared<Group>("Unlock Achievements");
 		auto cooldown = std::make_shared<Group>("Cooldown");
 		auto Safehouseinhills = std::make_shared<Group>(" Safehouse in the Hills");
@@ -31,7 +30,6 @@ namespace YimMenu::Submenus
 		auto businessGroup = std::make_shared<Group>("Business");
 		auto Bailloffice = std::make_shared<Group>("Bail Office");
 		auto Misc_business = std::make_shared<Group>("Misc");
-
 
 		auto casinoSlots = std::make_shared<Group>("Slot Machines");
 		//auto casinoWheel = std::make_shared<Group>("Lucky Wheel");
@@ -75,7 +73,6 @@ namespace YimMenu::Submenus
 		Bailloffice->AddItem(std::make_shared<CommandItem>("bailsecure_mw"_J));
 		Bailloffice->AddItem(std::make_shared<CommandItem>("Skip_Office_Dialogues"_J));
 
-
 		Misc_business->AddItem(std::make_shared<BoolCommandItem>("mansion_business_boost"_J));
 		Misc_business->AddItem(std::make_shared<CommandItem>("club_popularity"_J));
 		Misc_business->AddItem(std::make_shared<CommandItem>("club_payout"_J));
@@ -85,7 +82,6 @@ namespace YimMenu::Submenus
 		Misc_business->AddItem(std::make_shared<CommandItem>("smokewater"_J));
 		Misc_business->AddItem(std::make_shared<CommandItem>("helitours"_J));
 		Misc_business->AddItem(std::make_shared<CommandItem>("salvageyard"_J));
-
 
 		casinoSlots->AddItem(std::make_shared<BoolCommandItem>("casinomanipulaterigslotmachines"_J));
 
@@ -102,7 +98,7 @@ namespace YimMenu::Submenus
 		generalUnlocks->AddItem(std::make_shared<CommandItem>("unlockalltradeprices"_J));
 		generalUnlocks->AddItem(std::make_shared<CommandItem>("Unlock_Festive_Gifts"_J));
 		generalUnlocks->AddItem(std::make_shared<CommandItem>("Collectibles_Unlocks"_J));
-		
+
 		skip->AddItem(std::make_shared<CommandItem>("SkipDrDreeContract"_J));
 		skip->AddItem(std::make_shared<CommandItem>("SkipJenetteTheMutette"_J));
 		skip->AddItem(std::make_shared<CommandItem>("SkipCluckinBellRaid"_J));
@@ -137,28 +133,22 @@ namespace YimMenu::Submenus
 
 		missions->AddItem(std::make_shared<CommandItem>("alien_egg_mission"_J));
 
-		ceoGroup->AddItem(std::make_shared<CommandItem>("Become_CEO"_J));
-		ceoGroup->AddItem(std::make_shared<CommandItem>("Become_MC"_J));
-
 		achievements->AddItem(std::make_shared<CommandItem>("unlock_achievements"_J));
 
 		cooldown->AddItem(std::make_shared<CommandItem>("reset_casino_cd"_J));
 		cooldown->AddItem(std::make_shared<CommandItem>("reset_vehicle_sell_cd"_J));
 		cooldown->AddItem(std::make_shared<CommandItem>("Reset_vehicle_Delivery_cd"_J));
 
-
 		main->AddItem(generalGroup);
 		main->AddItem(gunvanGroup);
 		main->AddItem(requestServices);
 		main->AddItem(missions);
-		main->AddItem(ceoGroup);
 		main->AddItem(achievements);
 		main->AddItem(cooldown);
 
 		businesses->AddItem(businessGroup);
 		businesses->AddItem(Bailloffice);
 		businesses->AddItem(Misc_business);
-
 
 		casino->AddItem(casinoSlots);
 		unlocks->AddItem(generalUnlocks);
